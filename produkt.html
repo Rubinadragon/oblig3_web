@@ -13,29 +13,33 @@
                 <span>
                     <a href="index.html">Enviroshoe</a> 
                 </span>
-                <ul>
-                    <li>
-                        <a href="#">Herre</a>
-                    </li>
-                    <li>
-                        <a href="#">Dame</a>
-                    </li>
-                    <li>
-                        <a href="#">Barn</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="kundeservice.html">Kundeservice</a>
-                    </li>
-                </ul>
-                <section id="search">
-                    <form>
-                        <input id=search type=text>
-                    </form>
+                <section id="mobilehidden"></section>
+                    <ul>
+                        <li>
+                            <a href="#">Herre</a>
+                        </li>
+                        <li>
+                            <a href="#">Dame</a>
+                        </li>
+                        <li>
+                            <a href="#">Barn</a>
+                        </li>
+                    </ul>
+                    <ul id="toppkundeservice">
+                        <li>
+                            <a href="kundeservice.html">Kundeservice</a>
+                        </li>
+                    </ul>
+                    <section>
+                        <form>
+                            <input id=search type=text>
+                        </form>
+                    </section>
+                    <section>
+                        <a id="account"></a>
+                    </section>
                 </section>
-                <section id="account-cart">
-                    <a id="account"></a>
+                <section>
                     <a id="cart"></a>
                 </section>
             </nav>
@@ -45,7 +49,7 @@
         <section id="brodsmulesti">
             <nav>
                 <p>
-                    <a href="#">Hjemmeside</a>
+                    <a href="index.html">Hjemmeside</a>
                     >
                     <a href="#">Skoeksempel</a>
                 </p>
@@ -77,8 +81,38 @@
                             Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059006">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059006">Pixabay</a> 
                         </figcaption>
                     </section>
-                    <a class="neste" onclick=""></a>
+                    <a class="forrige" onclick="plusSlides(-1)">Sett in ikon</a>
+                    <a class="neste" onclick="plusSlides(1)">Sett inn ikon</a>
                 </section>
+                <br>
+                <section class="prikker">
+                    <span class="dot" onclick="currentslide1"></span>
+                    <span class="dot" onclick="currentslide2"></span>
+                    <span class="dot" onclick="currentslide3"></span>
+                    <span class="dot" onclick="currentslide4"></span>
+                </section>
+            </section>
+            <section id="produktnavn">
+                <h2>Lorem Ipsum</h2>
+                <h3 id="pris">XXX kr</h3>
+            </section>
+            <section id="storrelser">
+                <h4>Størrelser</h4>
+                <ol id="storrelsesutvalg">
+                    <li>
+                        <p>36</p>
+                        <p>37</p>
+                        <p>38</p>
+                        <p>39</p>
+                        <p>40</p>
+                        <p>41</p>
+                    </li>
+                </ol>
+            </section>
+            <section id="farger">
+                <p></p>
+                <p></p>
+                <p></p>
             </section>
     </main>
     <!--footer-->
