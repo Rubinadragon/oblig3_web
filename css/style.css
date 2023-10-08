@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+}
+body header {
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border: 1px black;
+}
+body header span {
+  font-family: Solway;
+  text-decoration: none;
+}
+body #mobilehidden {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
