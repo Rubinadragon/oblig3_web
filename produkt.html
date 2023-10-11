@@ -8,45 +8,48 @@
     </head>
     <body>
         <!--Header-->
-        <header>       
-            <nav>
-                <section id="hamburgermeny" class="ikoner">
-                    <a href="#">#</a>
-                </section>
-                <span id="logo">
-                    <a href="index.html">Enviroshoe</a> 
-                </span>
-                <section id="toppkategorier" class="mobilehidden">
-                    <ul>
-                        <li>
-                            <a href="#">Herre</a>
-                        </li>
-                        <li>
-                            <a href="#">Dame</a>
-                        </li>
-                        <li>
-                            <a href="#">Barn</a>
-                        </li>
-                        <ul id="toppkundeservice" class="mobilehidden">
+        <header> 
+            <span id="logo">
+                <a href="index.html">Enviroshoe</a> 
+            </span>      
+                <nav>
+                    <section id="hamburgermeny" class="ikoner">
+                        <a href="#">#</a>
+                    </section>
+                    <section id="toppkategorier" class="mobilehidden">
+                        <ul>
                             <li>
-                                <a href="kundeservice.html">Kundeservice</a>
+                                <a href="#">Herre</a>
+                            </li>
+                            <li>
+                                <a href="#">Dame</a>
+                            </li>
+                            <li>
+                                <a href="#">Barn</a>
                             </li>
                         </ul>
-                        <section id=search class="mobilehidden">
-                            <form>
-                                <input href="#" type=text>
-                            </form>
+                            <ul id="toppkundeservice">
+                                <li>
+                                    <a href="kundeservice.html">Kundeservice</a>
+                                </li>
+                            </ul>
+                            <section>
+                                <form id=search>
+                                    <input type=text>
+                                </form>
+                            </section>
+                            <section  id="account" class="ikoner">
+                                <a href="#">#</a>
+                            </section>      
                         </section>
-                        <section  id="account" class="ikoner" class="mobilehidden">
-                            <a href="#">#</a>
-                        </section>      
+                    <section id="desktophidden">
+                        <a href>#</a>
                     </section>
-                    </ul>
-                <section id="cart" class="ikoner">
-                    <a href="#">#</a>
-                </section>
-            </nav>
-    </header>
+                    <section id="cart" class="ikoner">
+                        <a href="#">#</a>
+                    </section>
+                </nav>
+        </header>
     <!--Main-->
     <main>
         <section id="brodsmulesti">
@@ -65,7 +68,7 @@
                             <picture>
                                 <img src="img/lowres/hoeyhelt-gulllowres.jpg" alt="Høyhelte sko med stropper i gull">
                             </picture>
-                            <figcaption>
+                            <figcaption id="bildekilde">
                                 Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Pixabay</a> 
                             </figcaption>
                         </figure>
@@ -75,7 +78,7 @@
                             <picture>
                                 <img src="img/lowres/hoeyhelt-gull-altlowres.jpg" alt="Høyhelte sko med stropper i gull">
                             </picture>
-                            <figcaption>
+                            <figcaption id="bildekilde">
                                 Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7786991">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7786991">Pixabay</a>
                             </figcaption>
                         </figure>
@@ -85,7 +88,7 @@
                             <picture>
                                 <img src="img/lowres/hoeyhelt-soelvlowres.jpg" alt="Høyhelte sko med stropper i sølv">
                             </picture>
-                            <figcaption>
+                            <figcaption id="bildekilde">
                                 Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059012">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059012">Pixabay</a>
                             </figcaption>
                         </figure>
@@ -95,7 +98,7 @@
                             <picture>
                                 <img src="img/lowres/hoeyhelt-svartlowres.jpg" alt="Høyhelte sko med stropper i svart">
                             </picture>
-                            <figcaption>
+                            <figcaption id="bildekilde">
                                 Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059006">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059006">Pixabay</a> 
                             </figcaption>
                         </figure>
@@ -134,6 +137,51 @@
                 <p></p>
             </section>
     </main>
+    <aside>
+        <section id="produktforslag">
+            <h4>Du vil også kanskje like</h4>
+            <section class="produkt">
+                <figure>
+                    <picture>
+                        <img src="img/lowres/blomsterskolowres.jpg" alt="Derbysko med blomstermønster">
+                    </picture>
+                    <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5095710">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5095710">Pixabay</a>
+                    </figcaption>
+                </figure>
+                <p><a href="#">Blomstersko</a></p>
+            </section>
+            <section class="produkt">
+                <figure>
+                    <picture>
+                        <img src="img/lowres/formelle-laerskolowres.jpg" alt="Brune derbysko">
+                    </picture>
+                    <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/rydv151-1917319/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2434210">rishabh yadav</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2434210">Pixabay</a>
+                    </figcaption>
+                </figure>
+                <p><a href="#">Brune derbysko</a></p>
+            </section>
+            <section class="produkt">
+                <figure>
+                    <picture>
+                        <img src="img/lowres/blaa-joggeskolowres.jpg" alt="Blå joggesko">
+                    </picture>
+                    <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/stux-12364/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371625">Stefan Schweihofer</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371625">Pixabay</a>
+                    </figcaption>
+                </figure>
+                <p><a href="#">Blå joggesko</a></p>
+            </section>
+            <section class="produkt">
+                <figure>
+                    <picture>
+                        <img src="img/lowres/Nike-sneakerslowres.jpg" alt="Mønstrede fargerike sneakers">
+                    </picture>
+                    <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/mohamedbn-38670969/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8171942">Mohamed Ben mansour</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8171942">Pixabay</a>
+                    </figcaption>
+                </figure>
+                <p><a href="#">Mønstrede sneakers</a></p>
+            </section>
+        </section>
+    </aside>
     <!--footer-->
     <footer>
         <section id="footer">

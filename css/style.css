@@ -4,24 +4,39 @@
 }
 
 @media only screen and (max-width: 500px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  #toppkategorier {
+    display: none;
+  }
   .mobilehidden {
     display: none;
   }
-  #logo a {
+  #logo {
     align-items: baseline;
     padding: 1rem;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 900px) {
-  #toppkundeservice {
+  #toppkundeservice a {
     display: none;
   }
   #search {
-    display: none;
+    display: none !important;
   }
   #logo a {
-    align-items: baseline;
     padding: 1rem;
+  }
+}
+@media only screen and (min-width: 901px) {
+  #desktophidden a {
+    display: none;
   }
 }
 body {
@@ -29,27 +44,27 @@ body {
   text-decoration: none;
   width: 100%;
   margin: 0 auto;
+  max-width: 1400px;
 }
 body header {
   display: flex;
   border: 1px black;
   border-style: none none solid none;
   min-height: 70px;
+  align-items: baseline;
   justify-content: space-around;
 }
 body header nav {
-  display: flex;
-  align-items: baseline;
   gap: 1rem;
 }
 body header #logo a {
-  display: flex;
   font-family: "Solway", serif;
   text-decoration: none;
   text-align: center;
   color: black;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1.5rem;
+  width: 60%;
 }
 body header #toppkategorier ul {
   list-style: none;
@@ -73,15 +88,57 @@ body header #toppkundeservice li a {
 }
 body header #search {
   display: flex;
-  justify-content: space-between;
+}
+body header #search input {
   border-radius: 20px;
   border-style: solid;
   border-color: black;
   border-width: 1px;
+  max-height: 1.5rem;
 }
 body header .ikoner a {
   display: flex;
 }
 body header #hamburgermeny {
   padding: 0 0 0 1rem;
+}
+body header .mobilehidden {
+  display: flex;
+}
+body main {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+body main #salg {
+  display: flex;
+  width: 100%;
+}
+body main #salgskrift {
+  display: flex;
+  background-color: #68BBF0;
+  width: 50%;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+body main #salgskrift p a {
+  text-decoration: none;
+  color: black;
+}
+body main #salgsbilde {
+  width: 50%;
+}
+body main #bildekilde {
+  text-decoration: none;
+  color: black;
+  font-size: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 1rem 0 1rem;
+}
+body figure {
+  margin: 0;
+}
+body figure img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
