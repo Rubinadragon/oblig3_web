@@ -20,13 +20,19 @@
         display:none;
     }
 
-    #search{
+    #search form{
         display: none;
     }
 
     #logo a{
         align-items: baseline;
         padding: 1rem;
+    }
+}
+
+@media only screen and(min-width:901px){
+    #desktophidden{
+        display:none;
     }
 }
 
