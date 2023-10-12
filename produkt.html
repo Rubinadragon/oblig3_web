@@ -5,27 +5,30 @@
         <title>Enviroshoe produkt</title>
         <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="https://kit.fontawesome.com/9e363cd766.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <!--Header-->
-        <header> 
-            <span id="logo">
-                <a href="index.html">Enviroshoe</a> 
-            </span>      
+        <div id="gridcontainer">
+            <!--Header-->
+
+            <header>     
                 <nav>
-                    <section id="hamburgermeny" class="ikoner">
-                        <a href="#">#</a>
-                    </section>
+                    <span id="logo">
+                        <a href="index.html">Enviroshoe</a> 
+                    </span>      
+   
+                        <i class="fa-solid fa-bars" id="hamburgermeny" class="ikoner"></i>
+
                     <section id="toppkategorier" class="mobilehidden">
                         <ul>
                             <li>
-                                <a href="#">Herre</a>
+                                <a>Herre</a>
                             </li>
                             <li>
-                                <a href="#">Dame</a>
+                                <a>Dame</a>
                             </li>
                             <li>
-                                <a href="#">Barn</a>
+                                <a>Barn</a>
                             </li>
                         </ul>
                             <ul id="toppkundeservice">
@@ -33,241 +36,262 @@
                                     <a href="kundeservice.html">Kundeservice</a>
                                 </li>
                             </ul>
-                            <section>
-                                <form id=search>
-                                    <input type=text>
-                                </form>
-                            </section>
-                            <section  id="account" class="ikoner">
-                                <a href="#">#</a>
-                            </section>      
-                        </section>
-                    <section id="desktophidden">
-                        <a href>#</a>
+
+                            
+                                <i class="fa-solid fa-user" id="account" class="ikoner"></i>
+                           
                     </section>
-                    <section id="cart" class="ikoner">
-                        <a href="#">#</a>
-                    </section>
+
+                    <section>
+                        <form>
+                            <input id=search class="mobilehidden" type=text>
+                        </form>
+                            <i class="fa-solid fa-magnifying-glass" id="searchbutton" class="ikoner"></i>
+                     </section>
+
+
+                        <i class="fa-solid fa-bag-shopping" id="cart" class="ikoner"></i>
+
                 </nav>
         </header>
-    <!--Main-->
-    <main>
-        <section id="brodsmulesti">
-            <nav>
-                <p>
-                    <a href="index.html">Hjemmeside</a>
-                    >
-                    <a href="#">Skoeksempel</a>
-                </p>
-            </nav>
-        </section>
-            <section class="karusellcontainer">
-                <section class="slides">
-                    <section class="nummertekst">
-                        <figure>
-                            <picture>
-                                <img src="img/lowres/hoeyhelt-gulllowres.jpg" alt="Høyhelte sko med stropper i gull">
-                            </picture>
-                            <figcaption id="bildekilde">
-                                Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Pixabay</a> 
-                            </figcaption>
-                        </figure>
+
+
+        <!--Main-->
+        <main>
+            <section id="brodsmulesti">
+                <nav>
+                    <p>
+                        <a href="index.html">Hjemmeside</a>
+                        >
+                        <a href="#">Skoeksempel</a>
+                    </p>
+                </nav>
+            </section>
+
+                <section class="karusellcontainer">
+                    <section class="slides">
+                        <section class="nummertekst">
+                            <figure>
+                                <picture>
+                                    <img src="img/lowres/hoeyhelt-gulllowres.jpg" alt="Høyhelte sko med stropper i gull">
+                                </picture>
+                                <figcaption id="bildekilde">
+                                    Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Pixabay</a> 
+                                </figcaption>
+                            </figure>
+                        </section>
+
+                        <section class="nummertekst">
+                            <figure>
+                                <picture>
+                                    <img src="img/lowres/hoeyhelt-gull-altlowres.jpg" alt="Høyhelte sko med stropper i gull">
+                                </picture>
+                                <figcaption id="bildekilde">
+                                    Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7786991">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7786991">Pixabay</a>
+                                </figcaption>
+                            </figure>
+                        </section>
+
+                        <section class="nummertekst">
+                            <figure>
+                                <picture>
+                                    <img src="img/lowres/hoeyhelt-soelvlowres.jpg" alt="Høyhelte sko med stropper i sølv">
+                                </picture>
+                                <figcaption id="bildekilde">
+                                    Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059012">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059012">Pixabay</a>
+                                </figcaption>
+                            </figure>
+                        </section>
+
+                        <section class="nummertekst">
+                            <figure>
+                                <picture>
+                                    <img src="img/lowres/hoeyhelt-svartlowres.jpg" alt="Høyhelte sko med stropper i svart">
+                                </picture>
+                                <figcaption id="bildekilde">
+                                    Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059006">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059006">Pixabay</a> 
+                                </figcaption>
+                            </figure>
+                        </section>
+
+                        <a class="forrige" onclick="plusSlides(-1)">Sett in ikon</a>
+                        <a class="neste" onclick="plusSlides(1)">Sett inn ikon</a>
                     </section>
-                    <section class="nummertekst">
-                        <figure>
-                            <picture>
-                                <img src="img/lowres/hoeyhelt-gull-altlowres.jpg" alt="Høyhelte sko med stropper i gull">
-                            </picture>
-                            <figcaption id="bildekilde">
-                                Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7786991">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7786991">Pixabay</a>
-                            </figcaption>
-                        </figure>
+
+                    <br>
+                    <section class="prikker">
+                        <span class="dot" onclick="currentslide1"></span>
+                        <span class="dot" onclick="currentslide2"></span>
+                        <span class="dot" onclick="currentslide3"></span>
+                        <span class="dot" onclick="currentslide4"></span>
                     </section>
-                    <section class="nummertekst">
-                        <figure>
-                            <picture>
-                                <img src="img/lowres/hoeyhelt-soelvlowres.jpg" alt="Høyhelte sko med stropper i sølv">
-                            </picture>
-                            <figcaption id="bildekilde">
-                                Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059012">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059012">Pixabay</a>
-                            </figcaption>
-                        </figure>
+
+                </section>
+
+                <section id="produktnavn">
+                    <h2>Lorem Ipsum</h2>
+                    <h3 id="pris">XXX kr</h3>
+                </section>
+
+                <section id="storrelser">
+                    <h4>Størrelser</h4>
+                    <ol id="storrelsesutvalg">
+                        <li>
+                            <p>36</p>
+                            <p>37</p>
+                            <p>38</p>
+                            <p>39</p>
+                            <p>40</p>
+                            <p>41</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section id="farger">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </section>
+
+        </main>
+        <aside>
+
+            <section id="produktforslag">
+                <h4>Du vil også kanskje like</h4>
+
+                <section class="produkt">
+                    <figure>
+                        <picture>
+                            <img src="img/lowres/blomsterskolowres.jpg" alt="Derbysko med blomstermønster">
+                        </picture>
+                        <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5095710">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5095710">Pixabay</a>
+                        </figcaption>
+                    </figure>
+                    <p><a href="#">Blomstersko</a></p>
+                </section>
+
+                <section class="produkt">
+                    <figure>
+                        <picture>
+                            <img src="img/lowres/formelle-laerskolowres.jpg" alt="Brune derbysko">
+                        </picture>
+                        <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/rydv151-1917319/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2434210">rishabh yadav</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2434210">Pixabay</a>
+                        </figcaption>
+                    </figure>
+                    <p><a href="#">Brune derbysko</a></p>
+                </section>
+
+                <section class="produkt">
+                    <figure>
+                        <picture>
+                            <img src="img/lowres/blaa-joggeskolowres.jpg" alt="Blå joggesko">
+                        </picture>
+                        <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/stux-12364/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371625">Stefan Schweihofer</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371625">Pixabay</a>
+                        </figcaption>
+                    </figure>
+                    <p><a href="#">Blå joggesko</a></p>
+                </section>
+
+                <section class="produkt">
+                    <figure>
+                        <picture>
+                            <img src="img/lowres/Nike-sneakerslowres.jpg" alt="Mønstrede fargerike sneakers">
+                        </picture>
+                        <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/mohamedbn-38670969/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8171942">Mohamed Ben mansour</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8171942">Pixabay</a>
+                        </figcaption>
+                    </figure>
+                    <p><a href="#">Mønstrede sneakers</a></p>
+                </section>
+            </section>
+        </aside>
+        
+        <!--footer-->
+        <footer>
+            <section id="footer">
+                <nav>
+                    <section id="footerkategorier">
+                        <h5><a href=#>Kategorier</a></h5>
+                        <ul>
+                            <li>
+                                <a href="#">Lorem</a>
+                            </li>
+                            <li>
+                                <a href="#">Ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">Dolor</a>
+                            </li>  
+                            <li>
+                                <a href="#">Sit</a>
+                            </li>   
+                            <li>
+                                <a href="#">Amet</a>
+                            </li>
+                        </ul>
                     </section>
-                    <section class="nummertekst">
-                        <figure>
-                            <picture>
-                                <img src="img/lowres/hoeyhelt-svartlowres.jpg" alt="Høyhelte sko med stropper i svart">
-                            </picture>
-                            <figcaption id="bildekilde">
-                                Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059006">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059006">Pixabay</a> 
-                            </figcaption>
-                        </figure>
+                    <section id="footerkundeservice">
+                        <h5><a href="kundeservice.html">Kundeservice</a></h5>
+                        <ul>
+                            <li>
+                                <a href="#">Lorem</a>
+                            </li>
+                            <li>
+                                <a href="#">Ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">Dolor</a>
+                            </li>  
+                            <li>
+                                <a href="#">Sit</a>
+                            </li>   
+                            <li>
+                                <a href="#">Amet</a>
+                            </li>
+                        </ul>
                     </section>
-                    <a class="forrige" onclick="plusSlides(-1)">Sett in ikon</a>
-                    <a class="neste" onclick="plusSlides(1)">Sett inn ikon</a>
-                </section>
-                <br>
-                <section class="prikker">
-                    <span class="dot" onclick="currentslide1"></span>
-                    <span class="dot" onclick="currentslide2"></span>
-                    <span class="dot" onclick="currentslide3"></span>
-                    <span class="dot" onclick="currentslide4"></span>
-                </section>
+                    <section id="footerbetaling">
+                        <h5><a href="#">Betaling</a></h5>
+                        <ul>
+                            <li>
+                                <a href="#">Lorem</a>
+                            </li>
+                            <li>
+                                <a href="#">Ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">Dolor</a>
+                            </li>  
+                            <li>
+                                <a href="#">Sit</a>
+                            </li>   
+                            <li>
+                                <a href="#">Amet</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="sosialemedier">
+                        <h5><a href="#">Sosiale medier</a></h5>
+                        <ul>
+                            <li>
+                                <a href="#">Lorem</a>
+                            </li>
+                            <li>
+                                <a href="#">Ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">Dolor</a>
+                            </li>  
+                            <li>
+                                <a href="#">Sit</a>
+                            </li>   
+                            <li>
+                                <a href="#">Amet</a>
+                            </li>
+                        </ul>
+                    </section>
+                </nav>
             </section>
-            <section id="produktnavn">
-                <h2>Lorem Ipsum</h2>
-                <h3 id="pris">XXX kr</h3>
-            </section>
-            <section id="storrelser">
-                <h4>Størrelser</h4>
-                <ol id="storrelsesutvalg">
-                    <li>
-                        <p>36</p>
-                        <p>37</p>
-                        <p>38</p>
-                        <p>39</p>
-                        <p>40</p>
-                        <p>41</p>
-                    </li>
-                </ol>
-            </section>
-            <section id="farger">
-                <p></p>
-                <p></p>
-                <p></p>
-            </section>
-    </main>
-    <aside>
-        <section id="produktforslag">
-            <h4>Du vil også kanskje like</h4>
-            <section class="produkt">
-                <figure>
-                    <picture>
-                        <img src="img/lowres/blomsterskolowres.jpg" alt="Derbysko med blomstermønster">
-                    </picture>
-                    <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5095710">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5095710">Pixabay</a>
-                    </figcaption>
-                </figure>
-                <p><a href="#">Blomstersko</a></p>
-            </section>
-            <section class="produkt">
-                <figure>
-                    <picture>
-                        <img src="img/lowres/formelle-laerskolowres.jpg" alt="Brune derbysko">
-                    </picture>
-                    <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/rydv151-1917319/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2434210">rishabh yadav</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2434210">Pixabay</a>
-                    </figcaption>
-                </figure>
-                <p><a href="#">Brune derbysko</a></p>
-            </section>
-            <section class="produkt">
-                <figure>
-                    <picture>
-                        <img src="img/lowres/blaa-joggeskolowres.jpg" alt="Blå joggesko">
-                    </picture>
-                    <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/stux-12364/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371625">Stefan Schweihofer</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371625">Pixabay</a>
-                    </figcaption>
-                </figure>
-                <p><a href="#">Blå joggesko</a></p>
-            </section>
-            <section class="produkt">
-                <figure>
-                    <picture>
-                        <img src="img/lowres/Nike-sneakerslowres.jpg" alt="Mønstrede fargerike sneakers">
-                    </picture>
-                    <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/mohamedbn-38670969/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8171942">Mohamed Ben mansour</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8171942">Pixabay</a>
-                    </figcaption>
-                </figure>
-                <p><a href="#">Mønstrede sneakers</a></p>
-            </section>
-        </section>
-    </aside>
-    <!--footer-->
-    <footer>
-        <section id="footer">
-            <nav>
-                <section id="footerkategorier">
-                    <h5><a href=#>Kategorier</a></h5>
-                    <ul>
-                        <li>
-                            <a href="#">Lorem</a>
-                        </li>
-                        <li>
-                            <a href="#">Ipsum</a>
-                        </li>
-                        <li>
-                            <a href="#">Dolor</a>
-                        </li>  
-                         <li>
-                            <a href="#">Sit</a>
-                        </li>   
-                        <li>
-                            <a href="#">Amet</a>
-                        </li>
-                    </ul>
-                </section>
-                <section id="footerkundeservice">
-                    <h5><a href="kundeservice.html">Kundeservice</a></h5>
-                    <ul>
-                        <li>
-                            <a href="#">Lorem</a>
-                        </li>
-                        <li>
-                            <a href="#">Ipsum</a>
-                        </li>
-                        <li>
-                            <a href="#">Dolor</a>
-                        </li>  
-                         <li>
-                            <a href="#">Sit</a>
-                        </li>   
-                        <li>
-                            <a href="#">Amet</a>
-                        </li>
-                    </ul>
-                </section>
-                <section id="footerbetaling">
-                    <h5><a href="#">Betaling</a></h5>
-                    <ul>
-                        <li>
-                            <a href="#">Lorem</a>
-                        </li>
-                        <li>
-                            <a href="#">Ipsum</a>
-                        </li>
-                        <li>
-                            <a href="#">Dolor</a>
-                        </li>  
-                         <li>
-                            <a href="#">Sit</a>
-                        </li>   
-                        <li>
-                            <a href="#">Amet</a>
-                        </li>
-                    </ul>
-                </section>
-                <section id="sosialemedier">
-                    <h5><a href="#">Sosiale medier</a></h5>
-                    <ul>
-                        <li>
-                            <a href="#">Lorem</a>
-                        </li>
-                        <li>
-                            <a href="#">Ipsum</a>
-                        </li>
-                        <li>
-                            <a href="#">Dolor</a>
-                        </li>  
-                         <li>
-                            <a href="#">Sit</a>
-                        </li>   
-                        <li>
-                            <a href="#">Amet</a>
-                        </li>
-                    </ul>
-                </section>
-            </nav>
-        </section>
-    </footer>
+        </footer>
+        </div>
     </body>
 </html>

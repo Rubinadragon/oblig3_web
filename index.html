@@ -5,27 +5,31 @@
         <title>Enviroshoe forside</title>
         <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="https://kit.fontawesome.com/9e363cd766.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div id="gridcontainer">
+
+
         <!--Header-->
         <header>     
                 <nav>
                     <span id="logo">
                         <a href="index.html">Enviroshoe</a> 
                     </span>      
-                    <section id="hamburgermeny" class="ikoner">
-                        <a href="#">#</a>
-                    </section>
+   
+                        <i class="fa-solid fa-bars" id="hamburgermeny" class="ikoner"></i>
+
                     <section id="toppkategorier" class="mobilehidden">
                         <ul>
                             <li>
-                                <a href="#">Herre</a>
+                                <a>Herre</a>
                             </li>
                             <li>
-                                <a href="#">Dame</a>
+                                <a>Dame</a>
                             </li>
                             <li>
-                                <a href="#">Barn</a>
+                                <a>Barn</a>
                             </li>
                         </ul>
                             <ul id="toppkundeservice">
@@ -33,27 +37,30 @@
                                     <a href="kundeservice.html">Kundeservice</a>
                                 </li>
                             </ul>
-                            <section>
-                                <form id=search>
-                                    <input type=text>
-                                </form>
-                            </section>
-                            <section  id="account" class="ikoner">
-                                <a href="#">#</a>
-                            </section>      
+
+                            
+                                <i class="fa-solid fa-user" id="account" class="ikoner"></i>
+                           
                         </section>
-                    <section id="desktophidden">
-                        <a href>#</a>
-                    </section>
-                    <section id="cart" class="ikoner">
-                        <a href="#">#</a>
-                    </section>
+
+                        <section>
+                            <form>
+                                <input id=search class="mobilehidden" type=text>
+                            </form>
+                            <section id="searchbutton" class="ikoner">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </section>
+                        </section>
+
+                        <i class="fa-solid fa-bag-shopping" id="cart" class="ikoner"></i>
+
                 </nav>
         </header>
+
+
         <!--Main-->
         <main>
-            <section>
-                <section id="Salg">
+                <section id="Salgscontainer">
                     <figure>
                         <picture>  
                             <img src="img/lowres/hoestskolowres.jpg" alt="nærbilde av en persons sko">
@@ -61,11 +68,10 @@
                         <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/fernandozhiminaicela-6246704/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4192768">fernando zhiminaicela</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4192768">Pixabay</a>
                         </figcaption>
                     </figure>
+                        <p id="salgskrift"><a>Salg XX%</a></p>
                 </section>
-                <section id="salgskrift">
-                    <p><a href="#">Salg XX%</a></p>
-                </section>
-                <section id="Nyheterbilde">
+
+                <section id="Nyhetercontainer">
                     <figure>
                         <picture>
                             <img src="img/lowres/sko-paa-tur-lowres.jpg" alt="person som går tur i naturen, fokuset er på skoene">
@@ -73,9 +79,9 @@
                         <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/imkhuzaima-24825606/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6871901">imkhuzaima</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6871901">Pixabay</a>
                         </figcaption>
                     </figure>
-                    <p><a href="#" id="Nyheter">Nyheter</a></p>
+                    <p><a id="Nyheter">Nyheter</a></p>
                 </section>
-            </section>
+
             <section id="kategorier">
                 <nav>
                     <h2>Kategorier</h2>
@@ -92,6 +98,7 @@
                     </ul>
                 </nav>
             </section>
+
             <section id="kjop-brukt">
                 <figure>
                     <picture>
@@ -102,6 +109,7 @@
                 </figure>
                 <p><a href="#">Kjøp brukt</a></p>
             </section>
+
             <section id="artikkellenker">
                 <article>
                     <p>Lorem ipsum dolor sit</p>
@@ -110,6 +118,7 @@
                     <a href="#">Les mer</a>
                 </article>
             </section>
+
             <section id="populert">
                 <section class="produkt">
                     <figure>
@@ -119,18 +128,21 @@
                         <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/mixshot-34719382/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7875371">Marcin Lampart</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7875371">Pixabay</a>
                         </figcaption>
                     </figure>
-                    <p><a href="#">Oransje og svarte joggesko</a></p>
+                    <p><a>Oransje og svarte joggesko</a></p>
                 </section>
+
                 <section class="produkt">
                     <figure>
                         <picture>
-                            <img src="img/lowres/hoeyhelt-gulllowres.jpg" alt="Høyhelte sko med stropper i gull">
+                            <a href="produkt.html"><img src="img/lowres/hoeyhelt-gulllowres.jpg" alt="Høyhelte sko med stropper i gull"></a>
                         </picture>
                         <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Pixabay</a> 
+                            <!--Kilde:https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image-->
                         </figcaption>
                     </figure>
                     <p><a href="produkt.html">Høyhelte sko med stropper</a></p>
                 </section>
+
                 <section class="produkt">
                     <figure>
                         <picture>
@@ -139,8 +151,9 @@
                         <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5095710">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5095710">Pixabay</a>
                         </figcaption>
                     </figure>
-                    <p><a href="#">Blomstersko</a></p>
+                    <p><a>Blomstersko</a></p>
                 </section>
+
                 <section class="produkt">
                     <figure>
                         <picture>
@@ -149,8 +162,9 @@
                         <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/rydv151-1917319/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2434210">rishabh yadav</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2434210">Pixabay</a>
                         </figcaption>
                     </figure>
-                    <p><a href="#">Brune derbysko</a></p>
+                    <p><a>Brune derbysko</a></p>
                 </section>
+
                 <section class="produkt">
                     <figure>
                         <picture>
@@ -159,8 +173,9 @@
                         <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/stux-12364/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371625">Stefan Schweihofer</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371625">Pixabay</a>
                         </figcaption>
                     </figure>
-                    <p><a href="#">Blå joggesko</a></p>
+                    <p><a>Blå joggesko</a></p>
                 </section>
+
                 <section class="produkt">
                     <figure>
                         <picture>
@@ -169,13 +184,14 @@
                         <figcaption id="bildekilde">Image by <a href="https://pixabay.com/users/mohamedbn-38670969/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8171942">Mohamed Ben mansour</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8171942">Pixabay</a>
                         </figcaption>
                     </figure>
-                    <p><a href="#">Mønstrede sneakers</a></p>
+                    <p><a>Mønstrede sneakers</a></p>
                 </section>
             </section>
         </main>
+
+
         <!--Footer-->
         <footer>
-            <section id="footer">
                 <nav>
                     <section id="footerkategorier">
                         <h5><a href=#>Kategorier</a></h5>
@@ -197,6 +213,7 @@
                             </li>
                         </ul>
                     </section>
+
                     <section id="footerkundeservice">
                         <h5><a href="kundeservice.html">Kundeservice</a></h5>
                         <ul>
@@ -217,8 +234,9 @@
                             </li>
                         </ul>
                     </section>
+
                     <section id="footerbetaling">
-                        <h5><a href="#">Betaling</a></h5>
+                        <h5><a>Betaling</a></h5>
                         <ul>
                             <li>
                                 <a href="#">Lorem</a>
@@ -237,8 +255,9 @@
                             </li>
                         </ul>
                     </section>
+
                     <section id="sosialemedier">
-                        <h5><a href="#">Sosiale medier</a></h5>
+                        <h5><a>Sosiale medier</a></h5>
                         <ul>
                             <li>
                                 <a href="#">Lorem</a>
@@ -258,7 +277,7 @@
                         </ul>
                     </section>
                 </nav>
-            </section>
         </footer>
+        </div>
     </body>
 </html>

@@ -3,142 +3,244 @@
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 500px) {
-  header {
-    display: flex;
-    justify-content: center;
-  }
-  #toppkategorier {
-    display: none;
-  }
+/*Mobil*/
+#gridcontainer {
+  /*display:flex;*/
+}
+
+@media only screen and (max-width: 600px) {
   .mobilehidden {
-    display: none;
-  }
-  #logo {
-    align-items: baseline;
-    padding: 1rem;
-  }
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media only screen and (max-width: 900px) {
-  #toppkundeservice a {
-    display: none;
-  }
-  #search {
-    display: none !important;
-  }
-  #logo a {
-    padding: 1rem;
-  }
-}
-@media only screen and (min-width: 901px) {
-  #desktophidden a {
     display: none;
   }
 }
 body {
   background-color: rgb(250, 250, 250);
   text-decoration: none;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1400px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body ul li {
+  list-style: none;
 }
 body header {
-  display: flex;
   border: 1px black;
   border-style: none none solid none;
   min-height: 70px;
-  align-items: baseline;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
-body header nav {
-  gap: 1rem;
+body header #hamburgermeny {
+  order: 1;
+}
+body header .mobilehidden {
+  order: 3;
 }
 body header #logo a {
   font-family: "Solway", serif;
-  text-decoration: none;
   text-align: center;
-  color: black;
   text-transform: uppercase;
   font-size: 1.5rem;
   width: 60%;
-}
-body header #toppkategorier ul {
-  list-style: none;
-  display: flex;
-  gap: 2.5rem;
-}
-body header #toppkategorier ul li a {
-  text-decoration: none;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-}
-body header #toppkundeservice {
-  list-style: none;
-  display: flex;
-}
-body header #toppkundeservice li a {
-  display: flex;
-  text-decoration: none;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  order: 2;
 }
 body header #search {
-  display: flex;
-}
-body header #search input {
   border-radius: 20px;
   border-style: solid;
   border-color: black;
   border-width: 1px;
   max-height: 1.5rem;
 }
-body header .ikoner a {
-  display: flex;
-}
-body header #hamburgermeny {
-  padding: 0 0 0 1rem;
-}
-body header .mobilehidden {
-  display: flex;
-}
-body main {
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-}
-body main #salg {
-  display: flex;
-  width: 100%;
-}
-body main #salgskrift {
-  display: flex;
+body #salgskrift {
   background-color: #68BBF0;
   width: 50%;
-  flex-direction: row-reverse;
-  justify-content: center;
 }
-body main #salgskrift p a {
-  text-decoration: none;
-  color: black;
-}
-body main #salgsbilde {
-  width: 50%;
-}
-body main #bildekilde {
-  text-decoration: none;
-  color: black;
-  font-size: 0.7rem;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0 1rem 0 1rem;
-}
-body figure {
+
+figure {
   margin: 0;
 }
-body figure img {
+
+img {
   width: 100%;
-  height: auto;
-}/*# sourceMappingURL=style.css.map */
+  margin: 0;
+}
+
+figcaption {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 70%;
+}
+
+/*Desktop*/
+/*
+@media only screen and (max-width:500px){
+    header{
+        display:flex;
+        justify-content:center;
+    }
+
+    #toppkategorier{
+        display:none;
+    }
+    .mobilehidden{
+        display: none;
+    }
+
+    #logo{
+        align-items: baseline;
+        padding: 1rem;
+    }
+
+    main{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:900px){
+    #toppkundeservice a{
+        display:none;
+    }
+
+    #search{
+        display: none !important;
+    }
+
+    #logo a{
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width:901px){
+
+    #desktophidden a{
+        display:none;
+    }
+}
+
+body{
+    background-color: rgb(250, 250, 250);
+    text-decoration: none;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+
+    header{
+        display: flex;
+        border: 1px black;
+        border-style: none none solid none;
+        min-height: 70px;
+        align-items: baseline;
+        justify-content: space-around;
+
+        nav{
+            gap: 1rem;
+        }
+
+        #logo a{
+            font-family: 'Solway', serif;
+            text-decoration: none;
+            text-align:center;
+            color: black;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            width: 60%;
+        }
+
+        #toppkategorier ul{
+            list-style: none;
+            display: flex;
+            gap: 2.5rem;
+            li a{
+                text-decoration: none;
+                color:black;
+                font-family: Arial, Helvetica, sans-serif;
+             }
+        }
+
+        #toppkundeservice{
+            list-style: none;
+            display: flex;
+            li a{
+                display: flex;
+                text-decoration: none;
+                color:black;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+
+        #search{
+            display: flex;
+            input{
+                border-radius: 20px;
+                border-style: solid;
+                border-color: black;
+                border-width: 1px;
+                max-height:1.5rem;
+            }
+        }
+
+        .ikoner a{
+            display: flex;
+        }
+
+        #hamburgermeny{
+            padding: 0 0 0 1rem
+        }
+        .mobilehidden{
+            display:flex;
+        }
+    }
+
+    main{
+        display: flex;
+        font-family:Arial, Helvetica, sans-serif;
+        color: black;
+
+        #salgscontainer{
+            display:flex;
+            width:100%;
+
+
+        }
+
+        #salgskrift{
+            display:flex;
+            background-color: #68BBF0;
+            width:50%;
+            flex-direction: row-reverse;
+            justify-content: center;
+
+            p a{
+                text-decoration: none;
+                color:black;
+            }
+        }
+
+        #salgsbilde{
+            width:50%;
+        }
+
+        #bildekilde{
+            text-decoration: none;
+            color: black;
+            font-size: 0.7rem;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:0 1rem 0 1rem;
+        }
+    }
+
+    figure{
+        margin:0;
+
+        img{
+            width:100%;
+            height:auto;
+        }
+    }
+}
+*//*# sourceMappingURL=style.css.map */
