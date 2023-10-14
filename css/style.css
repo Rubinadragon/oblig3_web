@@ -115,18 +115,20 @@ body main #Salgscontainer {
   grid-row-start: 1;
   grid-row-end: 3;
 }
+body main #Salgscontainer .salgsbilde {
+  height: 100%;
+}
 body main #Salgscontainer #salgsoverskrift {
-  background-color: #68BBF0;
   width: 50%;
-  position: relative;
   font-size: 6rem;
-  max-height: -moz-min-content;
-  max-height: min-content;
   text-align: center;
-  padding: 1rem 0 0 0;
 }
 body main #Salgscontainer #salgsskrift {
   display: none;
+}
+body main #Salgscontainer section {
+  background-color: #68BBF0;
+  width: 50%;
 }
 body main #nyhetercontainer {
   grid-column-start: 2;

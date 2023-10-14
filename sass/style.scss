@@ -132,18 +132,22 @@ body{
                 grid-column-end: 3;
                 grid-row-start: 1;
                 grid-row-end:3;
+
+                .salgsbilde {
+                    height: 100%;
+                }
     
                 #salgsoverskrift{
-                    background-color: #68BBF0;
                     width:50%;
-                    position: relative;
                     font-size: 6rem;
-                    max-height:min-content;
                     text-align:center;
-                    padding: 1rem 0 0 0;
                 }
                 #salgsskrift{
                     display:none;
+                }
+                section{
+                    background-color: #68BBF0;
+                    width:50%;
                 }
             }
 
