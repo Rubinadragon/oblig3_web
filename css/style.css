@@ -8,30 +8,30 @@
   display: grid;
 }
 
-@media only screen and (max-width: 600px) {
-  #gridcontainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(10, 1fr);
-  }
-  .mobilehidden {
-    display: none;
-  }
-}
 body {
+  display: grid;
   background-color: rgb(250, 250, 250);
   text-decoration: none;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+body .ikoner {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+body .mobilehidden {
+  display: none;
 }
 body a {
   text-decoration: none;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-}
-body .horisontalliste {
-  display: flex;
 }
 body ul {
   display: flex;
@@ -43,22 +43,24 @@ body header {
   display: flex;
   flex-direction: row-reverse;
   align-items: baseline;
-  grid-area: "header";
   border: 1px black;
   border-style: none none solid none;
+  padding: 1rem;
   min-height: 70px;
-  justify-content: space-evenly;
+  max-height: 80px;
+  justify-content: space-around;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
 }
-body header #hamburgermeny {
-  order: 1;
+body header #hamburgercontainer {
+  order: 4;
 }
 body header #logo {
   display: flex;
   order: 2;
+  justify-content: center;
 }
 body header #logo a {
   font-family: "Solway", serif;
@@ -69,25 +71,75 @@ body header #logo a {
 }
 body header nav {
   display: flex;
+  gap: 1rem;
+  align-items: baseline;
 }
-body header #search {
+body header nav .horisontalliste {
+  display: flex;
+  gap: 1rem;
+}
+body header nav .horisontalliste #toppkundeservice {
+  gap: 2rem;
+}
+body header nav form {
+  display: flex;
+  align-items: center;
+}
+body header nav form #search {
   border-radius: 20px;
   border-style: solid;
   border-color: black;
   border-width: 1px;
   max-height: 1.5rem;
 }
-body .salgsbilde {
-  width: 50%;
+body header nav form #cart {
+  order: 3;
 }
-body #salgscontainer {
-  grid-area: "salgscontainer";
+body header nav form #account {
+  order: 1;
+}
+body main {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 9;
+}
+body main #Salgscontainer {
+  display: flex;
+  display: flex;
+  grid-area: salgscontainer;
   width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
-body #salgscontainer #salgskrift {
+body main #Salgscontainer #salgsoverskrift {
   background-color: #68BBF0;
   width: 50%;
   position: relative;
+  font-size: 6rem;
+  max-height: -moz-min-content;
+  max-height: min-content;
+  text-align: center;
+  padding: 1rem 0 0 0;
+}
+body main #Salgscontainer #salgsskrift {
+  display: none;
+}
+body main #nyhetercontainer {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+body footer {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
 }
 
 figure {
@@ -105,10 +157,34 @@ figcaption {
   font-size: 70%;
 }
 
+/*Mobil*/
+@media only screen and (max-width: 800px) {
+  #gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 7fr 7fr 4fr 7fr 3fr 3fr 5fr 5fr 3fr;
+  }
+  .mobilehidden {
+    display: none;
+  }
+}
 /*Desktop*/
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
+  body .mobilehidden {
+    display: flex;
+  }
+  body #hamburgermeny {
+    display: none;
+  }
   body .desktophidden {
     display: none;
+  }
+  body header {
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  body header nav {
+    justify-content: flex-start;
   }
 }
 /*

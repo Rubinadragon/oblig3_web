@@ -5,6 +5,7 @@
         <title>Enviroshoe forside</title>
         <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="https://unpkg.com/normalize.css">
         <script src="https://kit.fontawesome.com/9e363cd766.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -12,14 +13,16 @@
 
 
         <!--Header-->
-        <header>   
+        <header>  
+            <nav class="headerkategorier" id="hamburgercontainer">
+                <i class="fa-solid fa-bars ikoner" id="hamburgermeny"></i>
+            </nav>
+            
             <span id="logo">
                 <a href="index.html">Enviroshoe</a> 
             </span>      
 
-                <nav>
-                        <i class="fa-solid fa-bars ikoner" id="hamburgermeny"></i>
-
+                <nav class="headerkategorier">
                         <ul class="horisontalliste mobilehidden">
                             <li class="mobilehidden">
                                 <a>Herre</a>
@@ -35,7 +38,7 @@
                                 <a href="kundeservice.html">Kundeservice</a>
                             </li>
                         </ul>
-                            <i class="fa-solid fa-user ikoner" id="account"></i>
+                            <i class="fa-solid fa-user ikoner mobilehidden" id="account"></i>
 
 
                             <form>
@@ -54,13 +57,15 @@
                 <section id="Salgscontainer">
                     <figure>
                         <picture>  
-                            <source srcset="img/lowres/hoestskolowres.jpg" alt="nærbilde av en persons sko" class="salgsbilde" class="desktophidden" media="(min-width: 600px)">
+                            <source srcset="img/lowres/hoestskolowres.jpg" class="salgsbilde desktophidden" media="(min-width: 600px)">
                             <img src="img/lowres/hoestskolowres-halv.jpg" id="mobilsalgsbilde" class="salgsbilde" alt="nærbilde av en persons sko">
                         </picture>
                         <figcaption class="bildekilde">Image by <a href="https://pixabay.com/users/fernandozhiminaicela-6246704/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4192768">fernando zhiminaicela</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4192768">Pixabay</a>
                         </figcaption>
                     </figure>  
-                    <a id="salgskrift">Salg XX%</a>
+                    <a id="salgsoverskrift">Salg XX%</a>
+                    <a id="salgsskrift">Lorem ipsum</a>
+                    
                 </section>
 
                 <section id="Nyhetercontainer">
@@ -71,7 +76,7 @@
                         <figcaption class="bildekilde">Image by <a href="https://pixabay.com/users/imkhuzaima-24825606/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6871901">imkhuzaima</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6871901">Pixabay</a>
                         </figcaption>
                     </figure>
-                    <button id="Nyheter">Nyheter</button>
+                    <button id="Nyheter" class="bildeknapp">Nyheter</button>
                 </section>
 
             <section id="kategorier">
@@ -99,15 +104,15 @@
                     <figcaption class="bildekilde">Image by <a href="https://pixabay.com/users/arjunmj-34101863/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7998470">Arjun MJ</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7998470">Pixabay</a>                    
                     </figcaption>
                 </figure>
-                <button href="#">Kjøp brukt</button>
+                <button id="kjopbrukt" class="bildeknapp">Kjøp brukt</button>
             </section>
 
             <section id="artikkellenker">
                 <article>
                     <p>Lorem ipsum dolor sit</p>
-                    <button href="#">Les mer</button>
+                    <button>Les mer</button>
                     <p>Lorem ipsum dolor sit</p>
-                    <button href="#">Les mer</button>
+                    <button>Les mer</button>
                 </article>
             </section>
 
@@ -125,9 +130,7 @@
 
                 <article class="produkt">
                     <figure>
-                        <picture>
                             <a href="produkt.html"><img src="img/lowres/hoeyhelt-gulllowres.jpg" alt="Høyhelte sko med stropper i gull"></a>
-                        </picture>
                         <figcaption class="bildekilde">Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Pixabay</a> 
                             <!--Kilde:https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image-->
                         </figcaption>
