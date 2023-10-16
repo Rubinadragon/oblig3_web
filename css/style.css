@@ -143,6 +143,10 @@ body footer {
   grid-row-start: 9;
   grid-row-end: 10;
 }
+body .bildekilde {
+  position: relative;
+  z-index: 1;
+}
 
 figure {
   margin: 0;
