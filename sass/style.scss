@@ -45,6 +45,7 @@ body{
         }
     }
     header{
+        background-color: rgb(250, 250, 250);
         display:flex;
         flex-direction: row-reverse;
         align-items: baseline;
@@ -53,6 +54,7 @@ body{
         padding: 1rem;
         min-height: 70px;
         max-height: 80px;
+        position: fixed;
         justify-content: space-around;
         grid-column-start: 1;
         grid-column-end: 3;
@@ -135,6 +137,10 @@ body{
 
                 .salgsbilde {
                     height: 100%;
+                }
+
+                #mobilsalgsbilde{
+                    object-fit:cover;
                 }
     
                 #salgsoverskrift{
