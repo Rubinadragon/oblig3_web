@@ -54,7 +54,6 @@ body{
         padding: 1rem;
         min-height: 70px;
         max-height: 80px;
-        position: fixed;
         justify-content: space-around;
         grid-column-start: 1;
         grid-column-end: 3;
@@ -157,11 +156,17 @@ body{
                 }
             }
 
-            #nyhetercontainer{
-                grid-column-start: 2;
+            #Nyhetercontainer {
+                display:flex;
+                grid-column-start: 1;
                 grid-column-end: 3;
-                grid-row-start: 1;
-                grid-row-end:3;
+                grid-row-start: 3;
+                grid-row-end: 3;
+                gap: 1rem 0;
+            }
+
+            figure{
+                width:100%
             }
         }
 

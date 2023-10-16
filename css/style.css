@@ -40,6 +40,7 @@ body ul li {
   list-style: none;
 }
 body header {
+  background-color: rgb(250, 250, 250);
   display: flex;
   flex-direction: row-reverse;
   align-items: baseline;
@@ -118,6 +119,10 @@ body main #Salgscontainer {
 body main #Salgscontainer .salgsbilde {
   height: 100%;
 }
+body main #Salgscontainer #mobilsalgsbilde {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 body main #Salgscontainer #salgsoverskrift {
   width: 50%;
   font-size: 6rem;
@@ -130,11 +135,16 @@ body main #Salgscontainer section {
   background-color: #68BBF0;
   width: 50%;
 }
-body main #nyhetercontainer {
-  grid-column-start: 2;
+body main #Nyhetercontainer {
+  display: flex;
+  grid-column-start: 1;
   grid-column-end: 3;
-  grid-row-start: 1;
+  grid-row-start: 3;
   grid-row-end: 3;
+  gap: 1rem 0;
+}
+body main figure {
+  width: 100%;
 }
 body footer {
   display: grid;
