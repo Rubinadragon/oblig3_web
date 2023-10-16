@@ -9,16 +9,11 @@
 }
 
 body {
-  display: grid;
   background-color: rgb(250, 250, 250);
   text-decoration: none;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  grid-column-start: 2;
-  grid-column-end: 10;
-  grid-row-start: 1;
-  grid-row-end: 4;
 }
 body .ikoner {
   display: flex;
@@ -105,6 +100,7 @@ body main {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 9;
+  padding: 0 1rem;
 }
 body main #Salgscontainer {
   display: flex;
@@ -115,6 +111,7 @@ body main #Salgscontainer {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
+  padding: 0 0 1rem 0;
 }
 body main #Salgscontainer .salgsbilde {
   height: 100%;
@@ -132,8 +129,15 @@ body main #Salgscontainer #salgsskrift {
   display: none;
 }
 body main #Salgscontainer section {
-  background-color: #68BBF0;
+  background-color: hsl(203, 82%, 67%);
   width: 50%;
+  display: flex;
+}
+body main .bildeknapp {
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 20px;
+  padding: 10px 20px;
+  position: absolute;
 }
 body main #Nyhetercontainer {
   display: flex;
@@ -142,9 +146,64 @@ body main #Nyhetercontainer {
   grid-row-start: 3;
   grid-row-end: 3;
   gap: 1rem 0;
+  padding: 0 0 1rem 0;
+}
+body main #kategorier {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+body main #kategorier nav ul {
+  gap: 1rem;
+}
+body main #kjop-bruktcontainer {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  padding: 1rem 0;
 }
 body main figure {
   width: 100%;
+}
+body main #artikkellenker {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+body main #artikkellenker article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+body main #artikkellenker article p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(203, 65%, 77%);
+  min-height: 3rem;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+body main #artikkellenker article p a {
+  display: flex;
+  align-items: center;
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  min-height: 2rem;
+  min-width: 5rem;
+  justify-content: center;
+}
+body main #populert {
+  display: flex;
+  flex-wrap: wrap;
 }
 body footer {
   display: grid;
@@ -201,6 +260,12 @@ figcaption {
   }
   body header nav {
     justify-content: flex-start;
+  }
+  body #kategorier {
+    display: none;
+  }
+  body #artikkellenker {
+    flex-wrap: nowrap;
   }
 }
 /*
