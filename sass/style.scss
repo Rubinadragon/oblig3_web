@@ -112,48 +112,47 @@ body{
     
         }
 
-
-        main{
-            display:grid;
+    main{
+        display:grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start:2;
+        grid-row-end: 9;
+        padding: 0 4%;
+            
+            
+        #Salgscontainer {
+            display: flex;
+            display:flex;
+            grid-area:salgscontainer;
+            width:100%;
             grid-column-start: 1;
             grid-column-end: 3;
-            grid-row-start:2;
-            grid-row-end: 9;
-            padding: 0 1rem;
-            
-            
-            #Salgscontainer {
-                    display: flex;
-                display:flex;
-                grid-area:salgscontainer;
-                width:100%;
-                grid-column-start: 1;
-                grid-column-end: 3;
-                grid-row-start: 1;
-                grid-row-end:3;
-                padding:  0 0 1rem 0;
+            grid-row-start: 1;
+            grid-row-end:3;
+            padding:  0 0 1rem 0;
 
-                .salgsbilde {
-                    height: 100%;
-                }
+            .salgsbilde {
+                height: 100%;
+            }
 
-                #mobilsalgsbilde{
-                    object-fit:cover;
-                }
+            #mobilsalgsbilde{
+                object-fit:cover;
+            }
     
-                #salgsoverskrift{
-                    width:50%;
-                    font-size: 6rem;
-                    text-align:center;
-                }
-                #salgsskrift{
-                    display:none;
-                }
-                section{
-                    background-color: hsl(203, 82%, 67%);
-                    width:50%;
-                    display:flex;
-                }
+            #salgsoverskrift{
+                width:50%;
+                font-size: 6rem;
+                text-align:center;
+            }
+            #salgsskrift{
+                display:none;
+            }
+            section{
+                background-color: hsl(203, 82%, 67%);
+                width:50%;
+                display:flex;
+            }
             }
 
             .bildeknapp{
@@ -181,8 +180,23 @@ body{
                 grid-row-end: 5;
 
                 nav{
+                    h2{
+                        justify-content: center;
+                        display: flex;
+                    }
+
                     ul{
                         gap: 1rem;
+                        li{
+                            display:flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            background-color: hsl(203, 65%, 77%);
+                            border-radius: 20px;
+                            min-height: 2.3rem;
+                            min-width: 5rem;
+                            padding: 0 1rem;
+                        }
                     }
                 }
             }
@@ -234,19 +248,48 @@ body{
                     }
                 }
             }
-
-            #populert {
+        }
+        #populert {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 7;
+            grid-row-end: 8;
+            gap: 3rem 0;
+            .produkt {
+                flex-basis: 50%;
+                gap: 1rem;
                 display: flex;
-                flex-wrap: wrap;
+                flex-direction: column;
+                max-width: 20rem;
+                border-style: solid;
+                border-color: rgb(0, 0, 0);
+                border-width: 1px
+            }
+
+            p {
+                justify-content: center;
+                display: flex;
+                font-weight: 600;
             }
         }
 
     footer{
-        display:grid;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 9;
         grid-row-end: 10;
+        nav {
+            flex-direction: row;
+            display: flex;
+            ul{
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+        }
     }
 
     .bildekilde{
@@ -278,12 +321,22 @@ figcaption{
     #gridcontainer{
         display:grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 80px 7fr 7fr 4fr 7fr 3fr 3fr 5fr 5fr 3fr;
-    }
-    .mobilehidden{
-        display:none;
-    }
+        grid-template-rows: 80px 7fr 7fr 4fr 7fr 3fr 3fr 5fr 5fr 80px;
 
+        body{
+            main{
+                #artikkellenker{
+                    article p{
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+
+        .mobilehidden{
+            display:none;
+        }
+    }
 }
 
 
@@ -317,6 +370,14 @@ figcaption{
 
         #artikkellenker{
             flex-wrap: nowrap;
+        }
+
+        body main #artikkellenker article p{
+            flex-direction: row;
+        }
+
+        body #populert .produkt {
+            flex-basis: 33.3%;
         }
 
     }

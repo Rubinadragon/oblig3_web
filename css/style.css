@@ -100,7 +100,7 @@ body main {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 9;
-  padding: 0 1rem;
+  padding: 0 4%;
 }
 body main #Salgscontainer {
   display: flex;
@@ -155,8 +155,22 @@ body main #kategorier {
   grid-row-start: 4;
   grid-row-end: 5;
 }
+body main #kategorier nav h2 {
+  justify-content: center;
+  display: flex;
+}
 body main #kategorier nav ul {
   gap: 1rem;
+}
+body main #kategorier nav ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(203, 65%, 77%);
+  border-radius: 20px;
+  min-height: 2.3rem;
+  min-width: 5rem;
+  padding: 0 1rem;
 }
 body main #kjop-bruktcontainer {
   display: flex;
@@ -201,16 +215,45 @@ body main #artikkellenker article p a {
   min-width: 5rem;
   justify-content: center;
 }
-body main #populert {
+body #populert {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  gap: 3rem 0;
+}
+body #populert .produkt {
+  flex-basis: 50%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 1px;
+}
+body #populert p {
+  justify-content: center;
+  display: flex;
+  font-weight: 600;
 }
 body footer {
-  display: grid;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 9;
   grid-row-end: 10;
+}
+body footer nav {
+  flex-direction: row;
+  display: flex;
+}
+body footer nav ul {
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 body .bildekilde {
   position: relative;
@@ -237,9 +280,12 @@ figcaption {
   #gridcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80px 7fr 7fr 4fr 7fr 3fr 3fr 5fr 5fr 3fr;
+    grid-template-rows: 80px 7fr 7fr 4fr 7fr 3fr 3fr 5fr 5fr 80px;
   }
-  .mobilehidden {
+  #gridcontainer body main #artikkellenker article p {
+    flex-direction: column;
+  }
+  #gridcontainer .mobilehidden {
     display: none;
   }
 }
@@ -266,6 +312,12 @@ figcaption {
   }
   body #artikkellenker {
     flex-wrap: nowrap;
+  }
+  body body main #artikkellenker article p {
+    flex-direction: row;
+  }
+  body body #populert .produkt {
+    flex-basis: 33.3%;
   }
 }
 /*
