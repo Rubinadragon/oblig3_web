@@ -53,7 +53,7 @@ body{
         max-height: 80px;
         justify-content: space-around;
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end:1;
    
@@ -115,7 +115,7 @@ body{
     main{
         display:grid;
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 4;
         grid-row-start:2;
         grid-row-end: 9;
         padding: 0 4%;
@@ -127,7 +127,7 @@ body{
             grid-area:salgscontainer;
             width:100%;
             grid-column-start: 1;
-            grid-column-end: 3;
+            grid-column-end: 4;
             grid-row-start: 1;
             grid-row-end:3;
             padding:  0 0 1rem 0;
@@ -165,7 +165,7 @@ body{
             #Nyhetercontainer {
                 display:flex;
                 grid-column-start: 1;
-                grid-column-end: 3;
+                grid-column-end: 4;
                 grid-row-start: 3;
                 grid-row-end: 3;
                 gap: 1rem 0;
@@ -175,7 +175,7 @@ body{
             #kategorier{
                 display:flex;
                 grid-column-start: 1;
-                grid-column-end: 3;
+                grid-column-end: 4;
                 grid-row-start: 4;
                 grid-row-end: 5;
 
@@ -204,7 +204,7 @@ body{
             #kjop-bruktcontainer{
                 display:flex;
                 grid-column-start: 1;
-                grid-column-end: 3;
+                grid-column-end: 4;
                 grid-row-start: 5;
                 grid-row-end: 6;
                 padding: 1rem 0;
@@ -216,7 +216,7 @@ body{
 
             #artikkellenker{
                 grid-column-start: 1;
-                grid-column-end: 3;
+                grid-column-end: 4;
                 grid-row-start: 6;
                 grid-row-end: 7;
 
@@ -255,7 +255,7 @@ body{
             flex-direction: row;
             justify-content: space-evenly;
             grid-column-start: 1;
-            grid-column-end: 3;
+            grid-column-end: 4;
             grid-row-start: 7;
             grid-row-end: 8;
             gap: 3rem 0;
@@ -279,7 +279,7 @@ body{
 
     footer{
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 4;
         grid-row-start: 10;
         grid-row-end: 11;
         border-style: solid none none;
@@ -347,7 +347,7 @@ figcaption{
 /*Desktop*/
 @media only screen and (min-width: 801px) {
     #gridcontainer{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     body{
