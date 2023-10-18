@@ -280,8 +280,12 @@ body{
     footer{
         grid-column-start: 1;
         grid-column-end: 3;
-        grid-row-start: 9;
-        grid-row-end: 10;
+        grid-row-start: 10;
+        grid-row-end: 11;
+        border-style: solid none none;
+        border-color: rgb(0, 0, 0);
+        border-width: 1px;
+        margin: 2rem 0 0;
         nav {
             flex-direction: row;
             display: flex;
@@ -320,7 +324,7 @@ figcaption{
 @media only screen and (max-width:800px){
     #gridcontainer{
         display:grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 80px 7fr 7fr 4fr 7fr 3fr 3fr 5fr 5fr 80px;
 
         body{
@@ -342,6 +346,10 @@ figcaption{
 
 /*Desktop*/
 @media only screen and (min-width: 801px) {
+    #gridcontainer{
+        grid-template-columns: 1fr 1fr;
+    }
+
     body{
         .mobilehidden{
             display: flex;
