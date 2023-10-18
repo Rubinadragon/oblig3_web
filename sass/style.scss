@@ -117,8 +117,8 @@ body{
         display:grid;
         grid-column-start: 1;
         grid-column-end: 4;
-        grid-row-start:2;
-        grid-row-end: 9;
+        grid-row-start: 2;
+        grid-row-end: 3;
         padding: 0 4%;
             
             
@@ -276,9 +276,17 @@ body{
                 display: flex;
                 font-weight: 600;
             }
+
+            .klikkbar{
+                p{
+                    text-decoration: solid;
+                }
+            }
         }
 
     footer{
+        display: flex;
+        flex-wrap: wrap;
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 10;
@@ -287,9 +295,11 @@ body{
         border-color: rgb(0, 0, 0);
         border-width: 1px;
         margin: 2rem 0 0;
+        padding: 0 2.3rem;
         nav {
             flex-direction: row;
             display: flex;
+            gap: 1rem;
             ul{
                 flex-wrap: wrap;
                 gap: 1rem;
@@ -366,9 +376,24 @@ body{
             grid-row-end: 5;
             flex-wrap:wrap;
         }
+        figure{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                max-width: 500px;
+            }
+        }
     }
 
     /*Produkt*/
+
+    #brodsmulesti {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 
     .produktbilde{
         display:flex;
@@ -376,9 +401,11 @@ body{
         justify-content: space-between;
         grid-column-start: 1;
         grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
 
         figure{
-            max-width: 700px;
+            max-width: 600px;
             min-width: 200px;
         }
 
@@ -391,9 +418,14 @@ body{
     #produktnavn {
         display: flex;
         flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 4;
+
     }
 
     #storrelser {
+        grid-column-start: 1;
+        grid-column-end: 4;
         display: flex;
         flex-direction: column;
         #storrelsesutvalg {
@@ -408,15 +440,19 @@ body{
             }
         }
     }
-
+    
     #kjop{
+        grid-column-start: 1;
+        grid-column-end: 4;
         display: flex;
         flex-wrap:wrap;
+        justify-content: center;
         gap: 1rem;
         a{
             background-color: hsl(203, 82%, 67%);
             max-width: 200px;
             min-width: 200px;
+            max-height: 50px;
             padding: 1rem;
             border-radius: 60px;
             justify-content: center;
@@ -424,6 +460,32 @@ body{
             font-weight: 600;
         }
     }
+
+    #innholdscontainer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        #beskrivelse {
+            max-width: 500px;
+            padding: 2rem;
+            background-color: hsl(203, 65%, 77%);
+            min-width: 300px;
+        }
+
+        #storrelsekjop{
+            flex-direction: column;
+            gap: 1rem;
+            display: flex;
+        }
+    }
+
+    aside{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
 }
 
     
@@ -444,12 +506,13 @@ figcaption{
 
 /*Mobil*/
 @media only screen and (max-width:800px){
-    #gridcontainer{
+    #gridcontainer, #gridkunde, #gridprodukt{
         display:grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 80px 7fr 7fr 4fr 7fr 3fr 3fr 5fr 5fr 80px;
+        grid-template-rows: 80px 1fr 1fr 80px;
 
         body{
+
             main{
                 #artikkellenker{
                     article p{
@@ -462,6 +525,11 @@ figcaption{
         .mobilehidden{
             display:none;
         }
+    }
+
+    #gridkunde, #gridprodukt{
+        display:grid;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -510,9 +578,11 @@ figcaption{
             flex-basis: 33.3%;
         }
 
-        kjop{
+        #kjop{
             flex-direction: row;
+            justify-content: flex-start;
         }
+
     }
 }
     
