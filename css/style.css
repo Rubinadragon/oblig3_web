@@ -6,6 +6,7 @@
 /*Mobil*/
 #gridcontainer {
   display: grid;
+  grid-template-rows: 80px 1fr 1fr 80px;
 }
 
 body {
@@ -42,16 +43,14 @@ body header {
   display: flex;
   flex-direction: row-reverse;
   align-items: baseline;
+  justify-content: space-around;
+  grid-column: 1/4;
+  grid-row: 1/1;
   border: 1px black;
   border-style: none none solid none;
   padding: 1rem;
   min-height: 70px;
   max-height: 80px;
-  justify-content: space-around;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 1;
 }
 body header #hamburgercontainer {
   order: 4;
@@ -80,6 +79,10 @@ body header nav .horisontalliste {
 body header nav .horisontalliste #toppkundeservice {
   gap: 2rem;
 }
+body header nav .horisontalliste #toppkundeservice a {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
 body header nav form {
   display: flex;
   align-items: center;
@@ -104,9 +107,9 @@ body main {
   grid-row-start: 2;
   grid-row-end: 3;
   padding: 0 4%;
+  gap: 1%;
 }
 body main #Salgscontainer {
-  display: flex;
   display: flex;
   grid-area: salgscontainer;
   width: 100%;
@@ -115,6 +118,9 @@ body main #Salgscontainer {
   grid-row-start: 1;
   grid-row-end: 3;
   padding: 0 0 1rem 0;
+}
+body main #Salgscontainer figure {
+  max-width: 50%;
 }
 body main #Salgscontainer .salgsbilde {
   height: 100%;
@@ -144,19 +150,19 @@ body main .bildeknapp {
 }
 body main #Nyhetercontainer {
   display: flex;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 3;
+  grid-column: 1/4;
+  grid-row: 3/3;
   gap: 1rem 0;
-  padding: 0 0 1rem 0;
 }
 body main #kategorier {
   display: flex;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-column: 1/4;
+  grid-row: 4/5;
+}
+body main #kategorier nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 body main #kategorier nav h2 {
   justify-content: center;
@@ -446,9 +452,7 @@ figcaption {
 /*Mobil*/
 @media only screen and (max-width: 800px) {
   #gridcontainer, #gridkunde, #gridprodukt {
-    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 1fr 1fr 80px;
   }
   #gridcontainer body main #artikkellenker article p, #gridkunde body main #artikkellenker article p, #gridprodukt body main #artikkellenker article p {
     flex-direction: column;
