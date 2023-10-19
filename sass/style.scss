@@ -7,6 +7,7 @@
 /*Mobil*/
 #gridcontainer{
     display:grid;
+    grid-template-rows: 80px 1fr 1fr 80px;
 }
 
 body{
@@ -46,16 +47,14 @@ body{
         display:flex;
         flex-direction: row-reverse;
         align-items: baseline;
+        justify-content: space-around;
+        grid-column: 1 / 4;
+        grid-row: 1 / 1;
         border: 1px black;
         border-style: none none solid none;
         padding: 1rem;
         min-height: 70px;
         max-height: 80px;
-        justify-content: space-around;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end:1;
    
 
         #hamburgercontainer {
@@ -85,6 +84,9 @@ body{
                 gap: 1rem;
                 #toppkundeservice{
                     gap:2rem;
+                    a{
+                        text-decoration: solid;
+                    }
                 }
             }
 
@@ -120,11 +122,11 @@ body{
         grid-row-start: 2;
         grid-row-end: 3;
         padding: 0 4%;
+        gap: 1%;
             
             
         #Salgscontainer {
             display: flex;
-            display:flex;
             grid-area:salgscontainer;
             width:100%;
             grid-column-start: 1;
@@ -132,6 +134,10 @@ body{
             grid-row-start: 1;
             grid-row-end:3;
             padding:  0 0 1rem 0;
+
+            figure{
+                max-width: 50%;
+            }
 
             .salgsbilde {
                 height: 100%;
@@ -165,22 +171,21 @@ body{
 
             #Nyhetercontainer {
                 display:flex;
-                grid-column-start: 1;
-                grid-column-end: 4;
-                grid-row-start: 3;
-                grid-row-end: 3;
+                grid-column: 1 / 4;
+                grid-row: 3 / 3;
                 gap: 1rem 0;
-                padding: 0 0 1rem 0
             }
 
             #kategorier{
                 display:flex;
-                grid-column-start: 1;
-                grid-column-end: 4;
-                grid-row-start: 4;
-                grid-row-end: 5;
+                grid-column: 1 / 4;
+                grid-row: 4 / 5;
 
                 nav{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
                     h2{
                         justify-content: center;
                         display: flex;
@@ -507,9 +512,7 @@ figcaption{
 /*Mobil*/
 @media only screen and (max-width:800px){
     #gridcontainer, #gridkunde, #gridprodukt{
-        display:grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 80px 1fr 1fr 80px;
 
         body{
 
