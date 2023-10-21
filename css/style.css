@@ -6,7 +6,7 @@
 /*Mobil*/
 #gridcontainer {
   display: grid;
-  grid-template-rows: 80px 1fr 1fr 80px;
+  grid-template-rows: 80px 1fr 200px;
 }
 
 body {
@@ -78,10 +78,8 @@ body header nav .horisontalliste {
 }
 body header nav .horisontalliste #toppkundeservice {
   gap: 2rem;
-}
-body header nav .horisontalliste #toppkundeservice a {
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
+  border-width: 1px;
+  border-style: none none solid none;
 }
 body header nav form {
   display: flex;
@@ -102,8 +100,7 @@ body header nav form #account {
 }
 body main {
   display: grid;
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column: 1/4;
   grid-row-start: 2;
   grid-row-end: 3;
   padding: 0 4%;
@@ -111,7 +108,6 @@ body main {
 }
 body main #Salgscontainer {
   display: flex;
-  grid-area: salgscontainer;
   width: 100%;
   grid-column-start: 1;
   grid-column-end: 4;
@@ -130,7 +126,6 @@ body main #Salgscontainer #mobilsalgsbilde {
      object-fit: cover;
 }
 body main #Salgscontainer #salgsoverskrift {
-  width: 50%;
   font-size: 6rem;
   text-align: center;
 }
@@ -141,6 +136,7 @@ body main #Salgscontainer section {
   background-color: hsl(203, 82%, 67%);
   width: 50%;
   display: flex;
+  justify-content: center;
 }
 body main .bildeknapp {
   background-color: hsl(0, 0%, 98%);
@@ -235,6 +231,14 @@ body #populert {
   grid-row-end: 8;
   gap: 3rem 0;
 }
+body #populert #klikkbar-lenke {
+  border-style: double;
+  border-width: 4px;
+}
+body #populert #klikkbar-lenke p a {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
 body #populert .produkt {
   flex-basis: 50%;
   gap: 1rem;
@@ -262,6 +266,7 @@ body footer {
   grid-row-start: 10;
   grid-row-end: 11;
   border-style: solid none none;
+  background-color: hsl(0, 0%, 98%);
   border-color: rgb(0, 0, 0);
   border-width: 1px;
   margin: 2rem 0 0;
