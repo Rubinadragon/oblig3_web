@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;500;700&family=Solway:wght@700&display=swap');
 
 *{
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 /*Mobil*/
@@ -26,7 +26,7 @@ body{
     }
 
     .mobilehidden{
-        display:none
+        display:none;
     }
 
     a{
@@ -41,6 +41,11 @@ body{
         li{
             list-style:none;
         }
+    }
+
+    .kundeservice{
+        border-width: 1px;
+        border-style: none none solid none;
     }
     header{
         background-color: rgb(250, 250, 250);
@@ -84,8 +89,6 @@ body{
                 gap: 1rem;
                 #toppkundeservice{
                     gap:2rem;
-                    border-width: 1px;
-                     border-style: none none solid none;
                 }
             }
 
@@ -118,7 +121,7 @@ body{
         display:grid;
         grid-column: 1 / 4;
         grid-row-start: 2;
-        grid-row-end: 3;
+        grid-row-end: 4;
         padding: 0 4%;
         gap: 1%;
             
@@ -214,7 +217,7 @@ body{
             }
 
             figure{
-                width:100%
+                width:100%;
             }
 
             #artikkellenker{
@@ -281,7 +284,7 @@ body{
                 max-width: 20rem;
                 border-style: solid;
                 border-color: rgb(0, 0, 0);
-                border-width: 1px
+                border-width: 1px;
             }
 
             p {
@@ -308,7 +311,7 @@ body{
         background-color: hsl(0, 0%, 98%);
         border-color: rgb(0, 0, 0);
         border-width: 1px;
-        margin: 2rem 0 0;
+        margin: 10rem 0 0;
         padding: 0 2.3rem;
         nav {
             flex-direction: row;
@@ -353,7 +356,7 @@ body{
         gap: 1rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center
+        justify-content: center;
         }
         .servicelenke{
             display: flex;
@@ -462,6 +465,7 @@ body{
         flex-wrap:wrap;
         justify-content: center;
         gap: 1rem;
+
         a{
             background-color: hsl(203, 82%, 67%);
             max-width: 200px;
@@ -498,9 +502,15 @@ body{
     aside{
         grid-column-start: 1;
         grid-column-end: 4;
-    }
 
-}
+        h5{
+            display: flex;
+            padding: 4%;
+            align-items: center;
+            font-size: 120%;
+        }
+        }
+    }
 
     
 
